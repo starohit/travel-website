@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: white;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.showcase.active{
+    right: 300px;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px 50px 70px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active{
+    background: url('close.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #65a4ec;
+    mix-blend-mode: overlay;
+}
+
+.ptext{
+    width: 100%;
+}
+
+.text1{
+    margin-top: 60px;
+    width: 100%;
+    background: url(bgm.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    bottom: 0;
+}
+
+
+.text1 h1{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    top: 30%;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+
+.text{
+    position: relative;
+    z-index: 10;
+    background: #0f1620;
+    flex-direction: column;
+    padding: 10px;
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.con1{
+    display: flex;
+    flex-direction: row;
+}
+
+.con2{
+    display: flex;
+    flex-direction: row;
+}
+
+.con3{
+    display: flex;
+    flex-direction: row;
+}
+
+.con1 div{
+    background: #0f1620;
+    border: 25px solid #0f1620;
+    text-align: center;
+}
+
+.con2 div{
+    background-color:#0f1620;
+    border: 25px solid #0f1620;
+    text-align: center;
+}
+
+.con3 div{
+    background-color: #0f1620;
+    border: 25px solid #0f1620;
+    text-align: center;
+}
+
+.con1 div:hover{
+    transform: scale(1.03);
+    transition: .6s;
+}
+
+.con2 div:hover{
+    transform: scale(1.03);
+    transition: .6s;
+}
+
+.con3 div:hover{
+    transform: scale(1.03);
+    transition: .6s;
+}
+
+img{
+    width: 100%;
+    object-fit: fill;
+    box-shadow: 8px 8px 15px rgb(255, 255, 255) ;
+}
+
+.item1{
+    flex: 1;
+}
+.item2{
+    flex: 1;
+}
+.item3{
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+.social{
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.social li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.social li a img:hover{
+    transform: translateY(-15px) scale(0.9);
+    transition: 0.4s;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.menu ul{
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+    
+}
+
+.menu ul li a:hover{
+    color:#65a4ec
+}
+
+@media (max-width: 650px){
+    .showcase,
+    .showcase header{
+        padding: 0px;
+    }
+
+    .text1 h1{
+        padding: 50px;
+        font-size: 1.8em;
+    }
+
+    .text h2{
+        font-size: 3em;
+    }
+
+    .text h3{
+        font-size: 2em;
+    }
+
+    .con1{
+        flex-direction: column;
+    }
+    .con2{
+        flex-direction: column;
+    }
+    .con3{
+        flex-direction: column;
+    }
+}

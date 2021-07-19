@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel Nighteye</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="BACK.mp4" muted loop autoplay></video> 
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h3>Reach Us</h3>
+            <div class="hehe">
+                <ul style="float: left; width: 20%;">
+                    <li><b>Email</b>        </li>
+                    <li><b>Phone</b>        </li>
+                    <li><b>Address</b>     </li>
+                </ul>
+                <ul style="float: left; width: 50%;">
+                    <li>starohitduke@gmail.com</li>
+                    <li>97-98-99-93-30</li>
+                    <li>Quarter no - 1178 , Street - 13 ,near Police Station , Sector - 6/D , Bokaro Steel City , Jharkhand , India</li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://m.facebook.com/starohitduke"><img src="b.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/btwitsrohitsingh"><img src="a.png" alt=""></a></li>
+            <li><a href="#"><img src="c.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.HTML">Home</a></li>
+            <br>
+            <li><a href="news.html">News</a></li>
+            <br>
+            <li><a href="destination.html">Destination</a></li>
+            <br>
+            <li><a href="https://starohit.blogspot.com/2021/07/maldives-social-distancing-creative.html">Blog</a></li>
+            <br>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active') 
+        })
+    </script>
+</body>
+</html>

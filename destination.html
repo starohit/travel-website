@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="destination.css">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel Nighteye</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <div class="overlay"></div>
+
+        <div class="ptext">
+            <div class="text1">
+                <h1>Traveling the best Traveling website</h1>
+                <h1 style=" font-size: 1em; border: 2px solid black;">Nighteye</h1>
+            </div>
+            <div class="text">
+                <div class="con1">
+                    <div class="item1">
+                        <img src="d01.jpg" alt="">
+                        <h3>Falassarna Beach</h3>
+                    </div>
+                    <div class="item2">
+                        <img src="d1.jpeg" alt="">
+                        <h3>Hawai</h3>
+                    </div>
+                    <div class="item3">
+                        <img src="d2 grace.jpg" alt="">
+                        <h3>Grace</h3> 
+                    </div>
+                </div>
+                <div class="con2">
+                    <div class="item1">
+                        <img src="d3 white heaven.jpg" alt="">
+                        <h3>White Heaven</h3>
+                    </div>
+                    <div class="item2">
+                        <img src="d4 seven miles.jpeg" alt="">
+                        <h3>Seven Miles</h3>
+                    </div>
+                    <div class="item3">
+                        <img src="d5 pink sand.jpg" alt="">
+                        <h3>Pink Sand</h3>
+                    </div>
+                </div>
+                <div class="con3">
+                    <div class="item1">
+                        <img src="d6matira.jpg" alt="">
+                        <h3>Matira</h3>
+                    </div>
+                    <div class="item2">
+                        <img src="d7 tulum.jpg" alt="">
+                        <h3>Tulum</h3>
+                    </div>
+                    <div class="item3">
+                        <img src="maldives.jpg" alt="">
+                        <h3>Maldives</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.HTML">Home</a></li>
+            <br>
+            <li><a href="news.html">News</a></li>
+            <br>
+            <li><a href="destination.html">Destination</a></li>
+            <br>
+            <li><a href="https://starohit.blogspot.com/2021/07/maldives-social-distancing-creative.html">Blog</a></li>
+            <br>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active') 
+        })
+    </script>
+</body>
+</html>

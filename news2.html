@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news2.css">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel Nighteye</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="BACK.mp4" muted loop autoplay></video> 
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>City Sightseeing relaunches Dubai tour service; 50% discount for residents</h2>
+            <h3>New health and safety measures introduced for passengers</h3>
+            <br>
+           <img src="dubai.jpg" alt="">
+            <p>
+                City Sightseeing, the world's leading open-top bus brand, is relaunching its operations in Dubai from Thursday with its unique city tour featuring new, enhanced health and safety measures. The service also announced a limited-time offer for residents.
+            <br><br>
+            First launched in 2014 as a joint venture with the dnata Travel Group, City Sightseeing Dubai has grown to become one of the city's most popular and recognisable tour options. It is known across more than 100 of the world's top destinations for its fun-filled, iconic red open-top buses and "hop-on, hop-off" concept, offering the chance to explore a city's top sights and attractions with an informative audio guide.
+            <br><br>
+            As domestic tourism continues to witness an increase in traffic, the City Sightseeing team is announcing a new offer for residents to rediscover Dubai with up to 50 per cent discount on the standard fare for a limited time.
+            <br><br>
+            Alaa AlKhatib, VP Destination Management, dnata Travel Group, commented, "We are delighted to announce that City Sightseeing Dubai is relaunching today offering UAE residents and tourists alike the chance to join us back on-board safely.
+            <br><br>
+            "Domestic tourists can find themselves on a quest to discover how well they know the city, and to mark the occasion, we are launching an introductory offer where UAE residents can purchase 2-for-1 tickets, for the chance to rediscover Dubai or explore for the first time some of its most extraordinary areas and landmarks, or share them to visiting friends and family."
+            <br><br>
+            Timings and route
+            <br><br>
+            Commencing today, City Sightseeing Dubai's daily service will run every hour from 10:00am to 4:00pm, departing from The Dubai Mall. The total runtime of the tour is two hours with the following stops included: The Dubai Mall, Al Fahidi Historical District, Dubai Museum, Old Souk, Heritage Village, Gold & Spice Souks, Dubai Creek, Madinat Jumeirah, and Atlantis The Palm, Dubai.
+            <br><br>
+            "City Sightseeing is a known and well-loved product for visitors to cities worldwide, with our popular tours recently relaunching in top locations for tourism, both domestic and international, across the world including Seville, Athens, London, Reykjavik and now, Dubai," added Enrique Ybarra, Founder & CEO, City Sightseeing Worldwide.
+            <br><br>
+            Safety protocols
+            <br><br>
+            They include reduced seat capacity, social distancing guidelines, single-use headphones, full bus cleaning and sanitisation after each use among other Covid-19 safety measures.
+            </p>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://m.facebook.com/starohitduke"><img src="b.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/btwitsrohitsingh"><img src="a.png" alt=""></a></li>
+            <li><a href="#"><img src="c.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.HTML">Home</a></li>
+            <br>
+            <li><a href="news.html">News</a></li>
+            <br>
+            <li><a href="destination.html">Destination</a></li>
+            <br>
+            <li><a href="https://starohit.blogspot.com/2021/07/maldives-social-distancing-creative.html">Blog</a></li>
+            <br>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active') 
+        })
+    </script>
+</body>
+</html>
